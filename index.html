@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galerie interactive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Galerie interactive</h1>
+
+    <div id="image" class="preview">
+      Hover over an image below to display here
+    </div>
+
+    <section class="thumbs">
+      <!-- Chaque image appelle upDate(this) au survol et unDo() au départ de la souris -->
+      <img src="https://picsum.photos/id/1015/600/400" alt="Montagnes au lever du soleil" onmouseover="upDate(this)" onmouseout="unDo()">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Chien mignon" onmouseover="upDate(this)" onmouseout="unDo()">
+      <img src="https://picsum.photos/id/1035/600/400" alt="Forêt brumeuse" onmouseover="upDate(this)" onmouseout="unDo()">
+      <img src="https://picsum.photos/id/1045/600/400" alt="Côte rocheuse" onmouseover="upDate(this)" onmouseout="unDo()">
+      <img src="https://picsum.photos/id/1050/600/400" alt="Ville la nuit" onmouseover="upDate(this)" onmouseout="unDo()">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
